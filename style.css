@@ -6,11 +6,10 @@
 }
 
 .container {
-  background-color: #1e90ff;
+  background-color: #334455;
   display: grid;
-  height: 100vh;
-  width: 100vw;
-  grid-template-rows: 0.1fr 1.3fr 5fr 0.1fr;
+  min-height: 100vh;
+  grid-template-rows: auto auto 1fr auto;
   grid-template-areas:
     "nav"
     "header"
@@ -55,4 +54,89 @@ footer {
   background-color: white;
   color: black;
   border-radius: 5px;
+}
+
+.headertext {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+.headertext h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.headertext p {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.headertext a {
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+.headertext a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.mainsection {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.sectionprojetos {
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #ffffff; /* Corrige o contraste */
+}
+
+.sectionprojetos:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.sectionprojetos h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.sectionprojetos .projetos {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+
+.sectionprojetos .projetos a {
+  color: #1e90ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.sectionprojetos .projetos a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 1rem;
 }
