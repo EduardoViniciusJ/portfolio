@@ -1,3 +1,4 @@
+/* Define estilos globais para toda a página */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   font-family: "Helvetica Neue", sans-serif;
 }
 
+/* Container principal que usa grid para organizar as áreas da página */
 .container {
   background-color: #334455;
   display: grid;
@@ -17,22 +19,32 @@
     "footer";
 }
 
+/* Estilo para o elemento header da página */
 header {
   grid-area: header;
 }
+
+/* Estilo para o elemento nav (barra de navegação) */
 nav {
   grid-area: nav;
 }
+
+/* Estilo para o elemento main (conteúdo principal) */
 main {
   grid-area: main;
 }
+
+/* Estilo para o elemento footer (rodapé) */
 footer {
   grid-area: footer;
 }
 
+/* Estilo da barra de navegação */
 .navbar {
   padding: 1rem;
 }
+
+/* Estilo da lista dentro da navbar, para alinhar os itens horizontalmente */
 .navbar ul {
   list-style: none;
   display: flex;
@@ -41,6 +53,8 @@ footer {
   margin: 0;
   padding: 0;
 }
+
+/* Estilo dos links da navbar */
 .navbar a {
   text-decoration: none;
   cursor: pointer;
@@ -50,12 +64,15 @@ footer {
   padding: 0.5rem 1rem;
   transition: background 0.3s, color 0.3s;
 }
+
+/* Efeito hover nos links da navbar */
 .navbar a:hover {
   background-color: white;
   color: black;
   border-radius: 5px;
 }
 
+/* Área do header com texto principal e alinhamento central */
 .headertext {
   grid-area: header;
   display: flex;
@@ -65,17 +82,21 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
+/* Estilo do título principal no header */
 .headertext h1 {
   font-size: 3.5rem;
   margin-bottom: 0.5rem;
   color: white;
 }
 
+/* Estilo do parágrafo no header */
 .headertext p {
   font-size: 1.5rem;
   color: white;
 }
 
+/* Estilo dos links dentro do header */
 .headertext a {
   text-decoration: none;
   cursor: pointer;
@@ -86,12 +107,14 @@ footer {
   transition: background 0.3s, color 0.3s;
 }
 
+/* Efeito hover para links no header */
 .headertext a:hover {
   background-color: white;
   color: black;
   border-radius: 5px;
 }
 
+/* Seção principal que contém os projetos ou contéudo de outras páginas, organizada em coluna */
 .mainsection {
   padding: 2rem;
   display: flex;
@@ -99,40 +122,47 @@ footer {
   gap: 5rem;
 }
 
+/* Estilo para cada seção de projeto, com sombra e efeito hover */
 .sectionprojetos {
   padding: 1.5rem 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  color: #ffffff; /* Corrige o contraste */
+  color: #ffffff;
 }
 
+/* Efeito hover que levanta e aumenta sombra das seções de projeto */
 .sectionprojetos:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilo do título das seções de projeto */
 .sectionprojetos h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
+/* Estilo do texto dentro das seções de projeto */
 .sectionprojetos .projetos {
   font-size: 1rem;
   line-height: 1.6;
   color: #f0f0f0;
 }
 
+/* Estilo dos links dentro das seções de projeto */
 .sectionprojetos .projetos a {
   color: #1e90ff;
   font-weight: bold;
   text-decoration: none;
 }
 
+/* Efeito hover nos links das seções de projeto */
 .sectionprojetos .projetos a:hover {
   text-decoration: underline;
 }
 
+/* Estilo do rodapé, centralizando texto */
 footer {
   display: flex;
   justify-content: center;
